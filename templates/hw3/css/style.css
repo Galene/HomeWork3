@@ -347,7 +347,7 @@ body span.line
     padding:17px 0 0;
     border-top:1px solid #a7c3cf;
 }
-#wrap #footer li {
+#wrap #footer .copyright {
     width:50%;
     float:left;
     text-align:right;
@@ -355,14 +355,14 @@ body span.line
     color:#a7c3cf;
     font-family:arial;
 }
-#wrap #footer li ul {
+/*#wrap #footer li ul {
     overflow:hidden;
 }
 #wrap #footer li ul li {
     width:auto;
     padding:0 21px 0 0;
-}
-#wrap #footer li ul li a {
+}*/
+#wrap #footer .nav {
     display:block;
     height:12px;
     font-size:10px;

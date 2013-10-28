@@ -239,9 +239,11 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 		</div><!-- all -->
 
 		<div id="footer-outer">
+            <p>footer-outer</p>
 
 		<?php if ($showbottom) : ?>
 			<div id="footer-inner">
+                <p>footer-inner</p>
 
 				<div id="bottom">
 					<?php if ($this->countModules('position-9')): ?>
@@ -258,6 +260,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 		<?php endif ; ?>
 
 			<div id="footer-sub">
+                <p>footer-sub</p>
 
 			<?php if (!$templateparams->get('html5', 0)): ?>
 				<div id="footer">

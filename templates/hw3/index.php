@@ -1,9 +1,7 @@
 <?php
-JLoader::import('joomla.filesystem.file');
-
-
 // No direct access.
 defined('_JEXEC') or die;
+
 // check modules
 $showRightColumn	= ($this->countModules('position-3') or $this->countModules('position-6') or $this->countModules('position-8'));
 $showbottom			= ($this->countModules('position-9') or $this->countModules('position-10') or $this->countModules('position-11'));
@@ -26,11 +24,11 @@ $templateparams	= $app->getTemplate(true)->params;
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_stylechanger.js', 'text/javascript', true);
 
 //JHTML::stylesheet($filename, $path);
+//$document =& JFactory::getDocument();
+//$document->addStyleSheet("/css/style.css".'text/css',"screen");
+//$doc->addStyleSheet(JURI::root().'/templates/'.$this->template.'/css/style.css'); //////
+// $document->addCustomTag($stylelink); !!!
 
-//$document->addStyleSheet('/css/style.css');
-
-$document =& JFactory::getDocument();
-$document->addStyleSheet("/css/style.css",'text/css',"screen");
 ?>
 
 <?php if(!$templateparams->get('html5', 0)): ?>
@@ -42,12 +40,8 @@ $document->addStyleSheet("/css/style.css",'text/css',"screen");
 
 
 <head>
-
-	<link href="css/style.css" type="text/css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-
     <jdoc:include type="head" />
+    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/style.css" type="text/css" media="screen,projection" />
 
 </head>
 
@@ -57,14 +51,31 @@ $document->addStyleSheet("/css/style.css",'text/css',"screen");
 <div id="wrap">
 
 	<div id="header">
-        <h1><a href="/">GeekHub</a></h1>
-        <div id="logo">
+        <!--<h1 id="logo">
+
+            <?php if ($logo != null ): ?>
+                <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($logo); ?>" alt="<?php echo htmlspecialchars($templateparams->get('sitetitle'));?>" />
+            <?php else: ?>
+                <?php echo htmlspecialchars($templateparams->get('sitetitle'));?>
+            <?php endif; ?>
+            <span class="header1">
+					<?php echo htmlspecialchars($templateparams->get('sitedescription'));?>
+					</span></h1>
+
+        <!--<h1 id="logo">
             <?php echo $app->getCfg('sitename'); ?>
+        </h1>-->
+        <h1><a href="/">GeekHub</a></h1>
+
+        <div class="nav">
+        <?php if($this->countModules('atomic-topmenu') or $this->countModules('position-2') ) : ?>
+            <jdoc:include type="modules" name="atomic-topmenu" style="container" />
+            <jdoc:include type="modules" name="position-1" style="container" />
+        <?php endif; ?>
         </div>
 
-        <div id="menu">
-            <jdoc:include type="modules" name="menu" style="xhtml" />
-        </div>
+
+
 
         <span class="line"></span>
         <img src="images/splash.png" alt="splash" />
@@ -76,10 +87,36 @@ $document->addStyleSheet("/css/style.css",'text/css',"screen");
 	</div><!-- content -->
 
 
-    <ul id="footer">
-        <jdoc:include type="modules" name="footer" style="xhtml" />
+    <!--<div id="footer-sub">
+        <p>footer-sub</p>
 
-    </ul>
+        <?php if (!$templateparams->get('html5', 0)): ?>
+        <div id="footer">
+            <?php else: ?>
+            <footer id="footer">
+                <?php endif; ?>
+
+                <jdoc:include type="modules" name="position-14" />
+                <p>
+                    <?php echo JText::_('G');?> <a href="http://www.joomla.org/">Joomla!&#174;</a>
+                </p>
+
+                <?php if (!$templateparams->get('html5', 0)): ?>
+        </div>
+    <?php else: ?>
+        </footer>
+    <?php endif; ?><!-- end footer -->
+
+    <div id="footer">
+        <div class="nav copyright">
+            lkh
+        </div>
+        <div class="copyright">
+            &copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
+        </div>
+    </div>
+
+    </div>
 </div>
 </body>
 </html>

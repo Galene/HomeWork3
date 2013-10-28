@@ -38,4 +38,17 @@
 
         </div>
 
+
+        <div id="footer">
+            <div class="nav">
+                <?php if($this->countModules('atomic-topmenu') or $this->countModules('position-14') ) : ?>
+                    <jdoc:include type="modules" name="position-14" style="container" />
+                    <jdoc:include type="modules" name="position-1" style="container" />
+                <?php endif; ?>
+
+            </div>
+            &copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
+        </div>
+
+
     </div>
