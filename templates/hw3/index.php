@@ -1,7 +1,6 @@
 <?php
-/**
- * @package		Joomla.Site
- */
+JLoader::import('joomla.filesystem.file');
+
 
 // No direct access.
 defined('_JEXEC') or die;
@@ -25,6 +24,13 @@ $doc			= JFactory::getDocument();
 $templateparams	= $app->getTemplate(true)->params;
 
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_stylechanger.js', 'text/javascript', true);
+
+//JHTML::stylesheet($filename, $path);
+
+//$document->addStyleSheet('/css/style.css');
+
+$document =& JFactory::getDocument();
+$document->addStyleSheet("/css/style.css",'text/css',"screen");
 ?>
 
 <?php if(!$templateparams->get('html5', 0)): ?>
@@ -36,18 +42,22 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 
 
 <head>
-    <jdoc:include type="head" />
 
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/flipclock.css">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <jdoc:include type="head" />
 
 </head>
 
 
 <body>
+
 <div id="wrap">
 
 	<div id="header">
+        <h1><a href="/">GeekHub</a></h1>
         <div id="logo">
             <?php echo $app->getCfg('sitename'); ?>
         </div>

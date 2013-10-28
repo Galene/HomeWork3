@@ -78,7 +78,7 @@ body span.line
     width: 350px !important;
     height: 52px !important;
     min-height: 52px !important;
-    margin:
+
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
@@ -1491,7 +1491,7 @@ html {
     height: 100%;
 }
 body {
-    background: #fff;
+    /*background: #fff;*/
     margin: 0px;
     padding: 0px;
     direction: ltr;

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" >
 <extension version="2.5" type="template" client="site">
 	<name>hw3</name>
 	<creationDate>24 Oct 2013</creationDate>
 	<author>Gala</author>
 	<authorEmail>galina.ck@gmail.com</authorEmail>
 	<copyright>Copyright (C) 2013. All rights reserved.</copyright>
-        <license>GNU General Public License</license>
+    <license>GNU General Public License</license>
 	<version>2.5.0</version>
 	<description>Home Work 3. Gala</description>
 
