@@ -74,11 +74,11 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
         <?php endif; ?>
         </div>
 
-
-
-
         <span class="line"></span>
-        <img src="images/splash.png" alt="splash" />
+        <p class="header1">
+            <?php echo htmlspecialchars($templateparams->get('sitedescription'));?>
+		</p>
+        <img id="splash" alt="splash" src="images/splash.png">
 	</div><!-- header -->
 
 	<div id="content">
@@ -124,7 +124,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 
     </div>
 
-    </div>
+
 </div>
 </body>
 </html>

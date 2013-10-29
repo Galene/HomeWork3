@@ -4,7 +4,10 @@
     <list default="true" id="3c6cbf3e-6ca0-4b32-88eb-f6c8c04bdb47" name="Default" comment="" />
     <ignored path="hw3_01.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.php" changelist="3c6cbf3e-6ca0-4b32-88eb-f6c8c04bdb47" time="1383077907971" ignored="false" />
+    <file path="/index.php" changelist="3c6cbf3e-6ca0-4b32-88eb-f6c8c04bdb47" time="1383082006032" ignored="false" />
+    <file path="$PROJECT_DIR$/../hw3_main01/index.php" changelist="3c6cbf3e-6ca0-4b32-88eb-f6c8c04bdb47" time="1383082693689" ignored="false" />
+    <file path="$PROJECT_DIR$/../hw3_main01/css/style.css" changelist="3c6cbf3e-6ca0-4b32-88eb-f6c8c04bdb47" time="1383082057293" ignored="false" />
+    <file path="/style.css" changelist="3c6cbf3e-6ca0-4b32-88eb-f6c8c04bdb47" time="1383082032001" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +30,15 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.47297296">
-              <folding />
+            <state line="76" column="0" selection-start="2920" selection-end="2920" vertical-scroll-proportion="0.7057057">
+              <folding>
+                <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3130#3722#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="n#style#0;n#jdoc:include#0;n#li#0;n#ul#0;n#li#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#1;n#li#0;n#ul#0;n#li#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,7 +46,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="91" column="0" selection-start="4009" selection-end="4009" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -53,6 +63,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -226,15 +237,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="91" column="0" selection-start="4009" selection-end="4009" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.47297296">
-          <folding />
+        <state line="76" column="0" selection-start="2920" selection-end="2920" vertical-scroll-proportion="0.7057057">
+          <folding>
+            <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3130#3722#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#jdoc:include#0;n#li#0;n#ul#0;n#li#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#1;n#li#0;n#ul#0;n#li#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

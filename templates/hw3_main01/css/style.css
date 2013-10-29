@@ -159,6 +159,27 @@ body span.line
 #header h4.registration a:hover {
     text-decoration: underline;
 }
+
+.header1 {
+    color: #246685;
+    font-family: "Trebuchet MS";
+    font-size: 36px;
+    font-weight: normal;
+    padding: 73px 0 18px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    list-style: none outside none;
+    margin: 0;
+    outline: medium none;
+}
+
+img #splash {
+    list-style: none outside none;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
 /*----------------------------------------------------------------------------------*/

@@ -73,11 +73,8 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
             <jdoc:include type="modules" name="position-1" style="container" />
         <?php endif; ?>
         </div>
-
-
-
-
         <span class="line"></span>
+
         <img src="images/splash.png" alt="splash" />
 	</div><!-- header -->
 
@@ -108,14 +105,14 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
     <?php endif; ?><!-- end footer -->
 
     <div id="footer">
-        <li>
+
             <?php if($this->countModules('footermenu') or $this->countModules('position-11')) : ?>
-                <ul> <li>
+                <li><ul> <li>
                         <jdoc:include type="modules" name="footermenu" style="container" />
                         <jdoc:include type="modules" name="position-11" style="container" />
-                    </li></ul>
+                    </li></ul></li>
             <?php endif; ?>
-        </li>
+
 
         <!--<jdoc:include type="modules" name="footermenu" />-->
         <div class="copyright">
@@ -124,7 +121,6 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 
     </div>
 
-    </div>
 </div>
 </body>
 </html>

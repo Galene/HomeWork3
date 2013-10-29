@@ -4,8 +4,10 @@
     <list default="true" id="b6a55d76-7140-4e49-8689-891a22362ca9" name="Default" comment="" />
     <ignored path="hw3_main01.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.php" changelist="b6a55d76-7140-4e49-8689-891a22362ca9" time="1383077907971" ignored="false" />
-    <file path="$PROJECT_DIR$/../hw3_01/index.php" changelist="b6a55d76-7140-4e49-8689-891a22362ca9" time="1383077909271" ignored="false" />
+    <file path="/index.php" changelist="b6a55d76-7140-4e49-8689-891a22362ca9" time="1383082006032" ignored="false" />
+    <file path="$PROJECT_DIR$/../hw3_01/index.php" changelist="b6a55d76-7140-4e49-8689-891a22362ca9" time="1383080262067" ignored="false" />
+    <file path="$PROJECT_DIR$/../hw3_01/css/style.css" changelist="b6a55d76-7140-4e49-8689-891a22362ca9" time="1383080287216" ignored="false" />
+    <file path="/style.css" changelist="b6a55d76-7140-4e49-8689-891a22362ca9" time="1383082032001" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,7 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="10" selection-start="4368" selection-end="4368" vertical-scroll-proportion="0.8873874">
+            <state line="84" column="39" selection-start="3172" selection-end="3172" vertical-scroll-proportion="0.7747748">
               <folding>
                 <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#jdoc:include#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,7 +44,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="34" selection-start="4170" selection-end="4170" vertical-scroll-proportion="0.0">
+            <state line="178" column="14" selection-start="5773" selection-end="5773" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,6 +61,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/css/beez5.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
@@ -234,14 +237,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="34" selection-start="4170" selection-end="4170" vertical-scroll-proportion="0.0">
+        <state line="178" column="14" selection-start="5773" selection-end="5773" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="10" selection-start="4368" selection-end="4368" vertical-scroll-proportion="0.8873874">
+        <state line="84" column="39" selection-start="3172" selection-end="3172" vertical-scroll-proportion="0.7747748">
           <folding>
             <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#jdoc:include#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

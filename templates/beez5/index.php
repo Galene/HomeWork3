@@ -109,7 +109,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 					<?php else: ?>
 					<?php echo htmlspecialchars($templateparams->get('sitetitle'));?>
 					<?php endif; ?>
-					<span class="header1"> 
+					<span class="header1">
 					<?php echo htmlspecialchars($templateparams->get('sitedescription'));?>
 					</span></h1>
 				</div><!-- end logoheader -->
