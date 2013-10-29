@@ -38,11 +38,15 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 	<head>
 		<jdoc:include type="head" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/position.css" type="text/css" media="screen,projection" />
+		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/style.css" type="text/css" media="screen,projection" />
+        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
+        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/position.css" type="text/css" media="screen,projection" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/layout.css" type="text/css" media="screen,projection" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/print.css" type="text/css" media="Print" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/beez5.css" type="text/css" />
+
+        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
+
 <?php
 	$files = JHtml::_('stylesheet', 'templates/'.$this->template.'/css/general.css', null, false, true);
 	if ($files):
@@ -109,7 +113,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 					<?php else: ?>
 					<?php echo htmlspecialchars($templateparams->get('sitetitle'));?>
 					<?php endif; ?>
-					<span class="header1"> 
+					<span class="registration">
 					<?php echo htmlspecialchars($templateparams->get('sitedescription'));?>
 					</span></h1>
 				</div><!-- end logoheader -->
@@ -238,7 +242,22 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 
 		</div><!-- all -->
 
-		<div id="footer-outer">
+<div id="footer">
+    <li>
+        <?php if($this->countModules('footermenu') or $this->countModules('position-11')) : ?>
+            <ul> <li>
+                    <jdoc:include type="modules" name="footermenu" style="container" />
+                    <jdoc:include type="modules" name="position-11" style="container" />
+                </li></ul>
+        <?php endif; ?>
+    </li>
+
+    <!--<jdoc:include type="modules" name="footermenu" />-->
+    <div class="copyright">
+        &copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
+    </div>
+</div>
+<!--		<div id="footer-outer">
             <p>footer-outer</p>
 
 		<?php if ($showbottom) : ?>
@@ -279,7 +298,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 				</footer>
 			<?php endif; ?>
 
-			</div>
+			</div>-->
 
 		</div>
 		<jdoc:include type="modules" name="debug" />

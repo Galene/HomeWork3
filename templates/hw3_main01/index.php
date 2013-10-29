@@ -46,7 +46,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 </head>
 
 
-<body class="inner">
+<body>
 
 <div id="wrap">
 

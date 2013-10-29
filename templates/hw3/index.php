@@ -87,9 +87,11 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/hide.j
             <jdoc:include type="modules" name="atomic-topmenu" style="container" />
             <jdoc:include type="modules" name="position-1" style="container" />
         <?php endif; ?>
+            <span class="registration">
+					<?php echo htmlspecialchars($templateparams->get('sitedescription'));?>
+					</span>
+
         </div>
-
-
 
 
         <span class="line"></span>
@@ -139,7 +141,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/hide.j
 
     </div>
 
-    </div>
+
 </div>
 </body>
 </html>
