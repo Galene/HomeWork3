@@ -22,21 +22,6 @@ $doc			= JFactory::getDocument();
 $templateparams	= $app->getTemplate(true)->params;
 
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_stylechanger.js', 'text/javascript', true);
-$doc->addStyleSheet($this->baseurl.'/templates/system/css/system.css');
-$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/position.css', $type = 'text/css', $media = 'screen,projection');
-$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/print.css', $type = 'text/css', $media = 'print');
-$files = JHtml::_('stylesheet', 'templates/'.$this->template.'/css/general.css', null, false, true);
-if ($files):
-    if (!is_array($files)):
-        $files = array($files);
-    endif;
-    foreach($files as $file):
-        $doc->addStyleSheet($file);
-    endforeach;
-endif;
-
-$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_stylechanger.js', 'text/javascript');
-$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/hide.js', 'text/javascript');
 
 //JHTML::stylesheet($filename, $path);
 //$document =& JFactory::getDocument();
@@ -123,16 +108,10 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/hide.j
     <?php endif; ?><!-- end footer -->
 
     <div id="footer">
-        <li>
-        <?php if($this->countModules('footermenu') or $this->countModules('position-11')) : ?>
-            <ul> <li>
-                <jdoc:include type="modules" name="footermenu" style="container" />
-                <jdoc:include type="modules" name="position-11" style="container" />
-                </li></ul>
-        <?php endif; ?>
-        </li>
+        <div class="footermenu">
+            <jdoc:include type="modules" name="footermenu" />
+        </div>
 
-            <!--<jdoc:include type="modules" name="footermenu" />-->
         <div class="copyright">
             &copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
         </div>
