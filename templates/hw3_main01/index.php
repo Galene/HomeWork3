@@ -67,6 +67,13 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
         </h1>-->
         <h1><a href="/">GeekHub</a></h1>
 
+        <ul class="links">
+            <li class="fb"><a href="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
+            <li class="vk"><a href="http://vkontakte.ru/geekhub">Вконтакте</a></li>
+            <li class="tw"><a href="http://twitter.com/#!/geek_hub">twitter</a></li>
+            <li class="yb"><a href="http://www.youtube.com/user/GeekHubchannel">youtube</a></li>
+        </ul>
+
         <div class="nav">
         <?php if($this->countModules('atomic-topmenu') or $this->countModules('position-2') ) : ?>
             <jdoc:include type="modules" name="atomic-topmenu" style="container" />
@@ -84,7 +91,33 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 	<div id="content">
         <jdoc:include type="message" />
         <jdoc:include type="component" />
-	</div><!-- content -->
+	</div>
+
+    <div class="home">
+    <ul class="social_share">
+        <li id="vk">
+            <script type="text/javascript">
+                VK.Widgets.Group("vk", {mode: 0, width: "276", height: "240"}, 30111409);
+            </script>
+        </li>
+        <li class="sertificates_list">
+            <h4><a href="/certified-professionals.html">Сертифiкованi професiонали</a></h4>
+        </li>
+        <li>
+            <h4>Наші Спонсори</h4>
+            <ul>
+                <li class="de"><a href="http://povnahata.com">Дім Євангелія</a></li>
+                <li class="moc"><a href="http://masterofcode.com">Masterofcode LTD</a></li>
+                <li class="sergium"><a href="http://sergium.net">SerGium.net</a></li>
+                <li class="clear left stuff"><a href="http://val.co.ua/">val.co.ua/</a></li>
+                <li class="youthog"><a href="http://yothog.com">Youthog.com</a></li>
+            </ul>
+        </li>
+    </ul>
+        </div>
+
+
+    <!-- content -->
 
 
     <!--<div id="footer-sub">

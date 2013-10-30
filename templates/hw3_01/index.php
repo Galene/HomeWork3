@@ -65,17 +65,30 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
         <!--<h1 id="logo">
             <?php echo $app->getCfg('sitename'); ?>
         </h1>-->
+
         <h1><a href="/">GeekHub</a></h1>
 
+        <!--Social
+        <?php if ($this->countModules('position-1')): ?>
+            <jdoc:include type="modules" name="position-1" style="none" />
+        <?php endif; ?>-->
+        <ul class="links">
+            <li class="fb"><a href="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
+            <li class="vk"><a href="http://vkontakte.ru/geekhub">Вконтакте</a></li>
+            <li class="tw"><a href="http://twitter.com/#!/geek_hub">twitter</a></li>
+            <li class="yb"><a href="http://www.youtube.com/user/GeekHubchannel">youtube</a></li>
+        </ul>
+        <!--End Social -->
+
         <div class="nav">
-        <?php if($this->countModules('atomic-topmenu') or $this->countModules('position-2') ) : ?>
+        <?php if($this->countModules('atomic-topmenu') or $this->countModules('position-3') ) : ?>
             <jdoc:include type="modules" name="atomic-topmenu" style="container" />
-            <jdoc:include type="modules" name="position-1" style="container" />
+            <jdoc:include type="modules" name="position-3" style="container" />
         <?php endif; ?>
         </div>
         <span class="line"></span>
 
-        <img src="images/splash.png" alt="splash" />
+        <!--<img src="images/splash.png" alt="splash" />-->
 	</div><!-- header -->
 
 	<div id="content">

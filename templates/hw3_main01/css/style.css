@@ -189,6 +189,7 @@ img #splash {
 }
 .inner #header .nav li a {
     padding: 48px 0 44px;
+    text-decoration: none;
 }
 .inner #header .nav li.active a  {
     min-width: 46px;
@@ -218,6 +219,7 @@ img #splash {
 }
 #header .nav li a.active,#header .nav li.active a,#header .nav li a:hover {
     color:#e21d5d;
+    text-decoration: none;
 }
 #header .links {
     overflow:hidden;
@@ -419,6 +421,7 @@ img #splash {
     font-family: "Trebuchet MS";
     color:#396375;
     text-transform:uppercase;
+    text-decoration: none;
 }
 #wrap #footer .copyright {
     width:50%;

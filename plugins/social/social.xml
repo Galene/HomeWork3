@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+  <name>social</name>
+  <creationDate>2013-10-30</creationDate>
+  <author>Gala</author>
+  <authorEmail>mail@mail.ru</authorEmail>
+  <copyright>Copyright (C) 2013 Social</copyright>
+  <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+  <version>1.0</version>
+  <description>Плагин Social это плагин социальных кнопок для joomla.</description>
+
+<!--Файлы которые нужно установить где social это папка куда нужно установить название должно совпадать с названием плагина -->  
+  <files>
+     <filename plugin="social">social.php</filename>
+     <folder>social</folder>
+  </files>
+ 
+<!--Конфигурация, такие параметры как default="1" задают установку этих значений по умолчанию когда их установили-->      
+  <config>
+    <fields name="params">
+ 
+      <fieldset name="basic">
+        <field name="twitter" type="list"
+          default="1"
+          label="PLG_EXTENSION_SOCIALJUNGLE_TWITTER">
+          <option value="0">PLG_EXTENSION_SOCIALJUNGLE_TWITTER_OF</option>
+          <option value="1">PLG_EXTENSION_SOCIALJUNGLE_TWITTER_ON</option>
+        </field>
+ 
+        <field name="textalign" type="list"
+          default="0"
+          label="PLG_EXTENSION_SOCIALJUNGLE_TEXTALIGN">
+          <option value="left">PLG_EXTENSION_SOCIALJUNGLE_TEXTALIGN_LEFT</option>
+          <option value="center">PLG_EXTENSION_SOCIALJUNGLE_TEXTALIGN_CENTER</option>
+          <option value="right">PLG_EXTENSION_SOCIALJUNGLE_TEXTALIGN_RIGHT</option>          
+        </field>  
+ 
+        <field name="pisition" type="list"
+          default="0"
+          label="PLG_EXTENSION_SOCIALJUNGLE_POSITION">
+          <option value="0">PLG_EXTENSION_SOCIALJUNGLE_POSITION_ONE</option>
+          <option value="1">PLG_EXTENSION_SOCIALJUNGLE_POSITION_TWO</option>
+          <option value="2">PLG_EXTENSION_SOCIALJUNGLE_POSITION_THREE</option>          
+        </field>
+ 
+</fieldset>    
+</fields>  
+  </config>    
+</extension>

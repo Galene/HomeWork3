@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>socialmodule</name>
+    <author>Gala</author>
+    <version>1.0</version>
+    <description>Module Social</description>
+    <files>
+        <filename module="mod_social">mod_social.php</filename>
+    </files>
+</install>
