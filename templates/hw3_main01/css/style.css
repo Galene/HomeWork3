@@ -92,13 +92,13 @@ body span.line
     height:108px;
 }
 
-#header h1 {
+#header h6 {
     position:absolute; top:19px; left:0px;
     width:167px;
     height:71px;
     background:url("http://geekhub.ck.ua/images/geekhub_logo.png") no-repeat;
 }
-#header h1 a {
+#header h6 a {
     display:block;
     width:167px;
     height:71px;
@@ -434,7 +434,7 @@ img #splash {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HOME--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-#content .home h2 {
+#content .home h1, #content .blog h1 {
     text-align:center;
     font-family: "Trebuchet MS";
     font-weight:normal;
@@ -447,20 +447,20 @@ img #splash {
     position:relative;
     z-index:2;
 }
-#content .home .description {
-    padding:5px 64px 27px;
+#content .home .description, #content .blog {
+/*    padding:5px 64px 27px;*/
     line-height:24px;
     font-size:14px;
     position:relative;
     z-index:2;
 }
-#content .home .description a {
+#content .home .description a , #content.blog {
     color:#E11D5D;
 }
-#content .home .description a:hover {
+#content .home .description a:hover ,#content .blog a:hover {
     text-decoration:underline;
 }
-#content .home ul.types {
+#content .home ul .types {
     overflow:hidden;
     margin-bottom:35px;
 }
@@ -473,12 +473,12 @@ img #splash {
 #content .home ul.types li.left-col{
     clear: both;
 }
-#content .home ul.types li img {
+#content .home ul.types li img, #content .blog img {
     display:block;
     float:left;
     margin:0 15px 0 0;
 }
-#content .home ul.types li h3 {
+#content .home ul .types li h2, #content .blog h2{
     font-family: "Trebuchet MS";
     font-weight:normal;
     font-size:27px;
@@ -622,7 +622,7 @@ img #splash {
 #content .team a:hover {
     text-decoration:underline;
 }
-#content .team h2 {
+#content .team h1 {
     font-family: "Trebuchet MS";
     font-weight:normal;
     font-size:50px;
@@ -641,7 +641,7 @@ img #splash {
     height:170px;
     padding:0 0 15px;
 }
-#content .team ul li h3 {
+#content .team ul li h2 {
     float:right;
     width:185px;
     padding: 37px 0 7px;
@@ -652,7 +652,7 @@ img #splash {
     color:#ea2778;
 
 }
-#content .team ul li h3 span {
+#content .team ul li h2 span {
     display:block;
     font-family: arial;
     font-weight:normal;
@@ -678,11 +678,11 @@ img #splash {
 #content .team ul li.odd {
     text-align:right;
 }
-#content .team ul li.odd h3 {
+#content .team ul li.odd h2 {
     float:left;
 
 }
-#content .team ul li.odd h3 span {
+#content .team ul li.odd h2 span {
     display:block;
 }
 #content .team ul li.odd img {
@@ -699,7 +699,7 @@ img #splash {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTACTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-#content .contacts h2 {
+#content .contacts h1 {
     font-family: "Trebuchet MS";
     font-weight:normal;
     font-size:50px;
@@ -737,7 +737,7 @@ img #splash {
     padding:0 0 30px;
 }
 
-#content .contacts dl h3 {
+#content .contacts dl h2 {
     text-align:center;
     padding:0px 0 12px;
     font-size:27px;
@@ -789,7 +789,7 @@ img #splash {
     font-size:14px;
     line-height:20px;}
 
-#content .about h2 {
+#content .about h1 {
     font-family: "Trebuchet MS";
     font-weight:normal;
     font-size:50px;
@@ -799,7 +799,7 @@ img #splash {
     border-bottom:1px solid #a7c3cf;
 }
 
-#content .about h3 {
+#content .about h2 {
     font-family: "Trebuchet MS";
     font-weight:normal;
     font-size:29px;
@@ -847,7 +847,7 @@ img #splash {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------REGISTER-------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-#content .register h2 {
+#content .register h1 {
     font-family: "Trebuchet MS";
     font-weight:normal;
     font-size:50px;
@@ -857,7 +857,7 @@ img #splash {
     border-bottom:1px solid #a7c3cf;
 }
 
-#content .register h3 {
+#content .register h2 {
     font-family: "Trebuchet MS";
     font-weight:normal;
     font-size:29px;
@@ -1049,16 +1049,115 @@ img #splash {
     font-size:13px;
     color:#EB3581;
 }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------beez5.css--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
 
+.column-1,
+.column-2
+{
+    border: solid 0px;
+}
+#main .items-row h2
+{
+    font-weight:normal;
+    padding:5px 2px 5px 2px;
+    font-size:1.4em
+}
+.blog {
+
+}
+.items-row {
+    margin-bottom: 10px !important;
+    overflow: hidden;
+    border-bottom: 1px solid #DAE1E8;
+}
+
+.cols-3 .column-1 {
+    float: left;
+    margin-right: 4%;
+    padding: 0 5px;
+    width: 29%;
+}
+
+.cols-3 .column-2 {
+    float: left;
+    margin-left: 0;
+    padding: 0 5px;
+    width: 29%;
+}
+
+.cols-3 .column-3 {
+    float: right;
+    padding: 0 5px;
+    width: 29%;
+}
+.column-1, .column-2 {
+    border: 0 solid;
+}
+.row-separator {
+    border: 0 none;
+    clear: both;
+    display: block;
+    height: 1px;
+    margin: 0;
+}
+/*
+#content .home ul .blog {
+    overflow:hidden;
+    margin-bottom:35px;
+}
+#content .home ul.blog li {
+    float:left;
+    width:295px;
+    padding: 24px 5px 24px 0;
+    border-top: 1px solid #D2DCE1;
+}
+#content .home ul.blog li.left-col{
+    clear: both;
+}
+#content .home ul.blog li img {
+    display:block;
+    float:left;
+    margin:0 15px 0 0;
+}
+#content .home ul .blog li h2{
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:27px;
+    line-height:27px;
+    color: #EA2778;
+}
+#content .home ul.blog li p {
+    overflow:hidden;
+    margin:13px 10px 0 0;
+    font-size: 13px;
+    line-height:18px;
+    color: #39525A;
+}
+#content .home ul.blog li a.title {
+    text-decoration: none !important;
+    color: #EA2778;
+}
+#content .home ul.blog li a {
+    display: block;
+    padding: 10px 0 0 115px;
+    text-decoration: underline;
+    color: #EA2678;
+}
+#content .home ul.blog li a:hover {
+    text-decoration: none;
+}*/
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HOME--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+
 #content .sidebar {
     width: 200px;
     padding: 0 40px 0 0;
     float: left;
 }
-#content .sidebar h3 {
+#content .sidebar h2 {
     text-align:center;
     font-family: "Trebuchet MS";
     font-weight:normal;
@@ -1091,7 +1190,8 @@ img #splash {
 #content .details {
     overflow: hidden;
 }
-#content .details h2 {
+#content .details h1 {
+
     padding: 0 0 18px;
     color:#EA2778;
     font-family: "Trebuchet MS";
@@ -1110,7 +1210,7 @@ img #splash {
     line-height:18px;
     color: #4C7687;
 }
-#content .details > ul > li  > h3 {
+#content .details > ul > li  > h2 {
     clear: both;
     text-align:center;
     font-family: "Trebuchet MS";
@@ -1141,7 +1241,7 @@ img #splash {
     margin:0 24px 0 0;
 }
 
-#content .details .team li h3 {
+#content .details .team li h2 {
     padding: 24px 0 4px;
     font-family: "Trebuchet MS";
     font-weight:normal;
@@ -1752,7 +1852,7 @@ input.file {
 
 /* Headers */
 
-h2 {
+h1 {
     border-bottom: 1px solid #DAE1E8;
     color: #45668E;
     font-size: 1.18em;
@@ -1768,10 +1868,10 @@ h4 {
     padding: 0px 0px 3px;
 }
 
-.font_medium h2 {
+.font_medium h1 {
     font-size: 1.27em;
 }
-.font_medium h2 {
+.font_medium h1 {
     font-size: 1.09em;
 }
 h4 .fl_r, h4 span {
