@@ -1,0 +1,231 @@
+﻿<?php echo '<?xml version="1.0" encoding="utf-8"?' .'>'; 
+
+
+$app = JFactory::getApplication();
+$doc = JFactory::getDocument();
+$this->language = $doc->language;
+$this->direction = $doc->direction;
+
+// Detecting Active Variables
+$option   = $app->input->getCmd('option', '');
+$view     = $app->input->getCmd('view', '');
+$layout   = $app->input->getCmd('layout', '');
+$task     = $app->input->getCmd('task', '');
+$itemid   = $app->input->getCmd('Itemid', '');
+$sitename = $app->getCfg('sitename');
+
+if($task == "edit" || $layout == "form" )
+{
+	$fullWidth = 1;
+}
+else
+{
+	$fullWidth = 0;
+}
+
+
+$doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
+
+$user = JFactory::getUser();
+
+// Adjusting content width
+if ($this->countModules('position-7') && $this->countModules('position-8'))
+{
+	$span = "span6";
+}
+elseif ($this->countModules('position-7') && !$this->countModules('position-8'))
+{
+	$span = "span9";
+}
+elseif (!$this->countModules('position-7') && $this->countModules('position-8'))
+{
+	$span = "span9";
+}
+else
+{
+	$span = "span12";
+}
+// Logo file or site title param
+if ($this->params->get('logoFile'))
+{
+	$logo = '<img src="'. JURI::root() . $this->params->get('logoFile') .'" alt="'. $sitename .'" />';
+}
+elseif ($this->params->get('sitetitle'))
+{
+	$logo = '<span class="site-title" title="'. $sitename .'">'. htmlspecialchars($this->params->get('sitetitle')) .'</span>';
+}
+else
+{
+	$logo = '<span class="site-title" title="'. $sitename .'">'. $sitename .'</span>';
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{LANG_TAG}" lang="{LANG_TAG}" dir="{LANG_DIR}" >
+<head>
+
+<jdoc:include type="head" />
+<link rel="stylesheet" href="templates/css/template.css" type="text/css" />
+</head>
+<body>
+
+
+
+
+
+
+
+class="site <?php echo $option . " view-" . $view . " layout-" . $layout . " task-" . $task . " itemid-" . $itemid . " ";?> <?php if ($this->params->get('fluidContainer')) { echo "fluid"; } ?>">
+	
+					<!-- Begin Content -->
+					<jdoc:include type="modules" name="position-3" style="xhtml" />
+					<jdoc:include type="message" />
+					<jdoc:include type="component" />
+					<jdoc:include type="modules" name="position-2" style="none" />
+					<!-- End Content -->
+				</div>
+				<?php if ($this->countModules('position-7')) : ?>
+				<div id="aside" class="span3">
+					<!-- Begin Right Sidebar -->
+					<jdoc:include type="modules" name="position-7" style="well" />
+					<!-- End Right Sidebar -->
+				</div>
+				<?php endif; ?>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container<?php if ($this->params->get('fluidContainer')) { echo "-fluid"; } ?>">
+			<hr />
+			<jdoc:include type="modules" name="footer" style="none" />
+			<p class="pull-right"><a href="#top" id="back-top"><?php echo JText::_('TPL_PROTOSTAR_BACKTOTOP'); ?></a></p>
+			<p>&copy; <?php echo $sitename; ?> <?php echo date('Y');?></p>
+		</div>
+	</div>
+	<jdoc:include type="modules" name="debug" style="none" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="wrap">
+	<div id="header">
+		<h1><a href="/">GeekHub</a></h1>
+        <ul class="nav">
+            <li class="active"><a href="/">Головна</a></li>
+            <li><a href="/about.html">Про GeekHub</a></li>
+            <li><a href="/team.html">Команда</a></li>
+            <li><a href="/contacts.html">Зв'язок</a></li>
+        </ul>
+
+        <ul class="links">
+            <li class="fb"><a href="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
+            <li class="vk"><a href="http://vkontakte.ru/geekhub">Вконтакте</a></li>
+            <li class="tw"><a href="http://twitter.com/#!/geek_hub">twitter</a></li>
+            <li class="yb"><a href="http://www.youtube.com/user/GeekHubchannel">youtube</a></li>
+            <li class="v"><a href="http://vimeo.com/user8452244">vimeo</a></li>
+        </ul>
+        <span class="line"></span>
+        
+            <h4 class="registration">Нажаль, реєстрацію на другий сезон вже зачинено. Чекаємо на Вас наступного року!</h4>
+            
+        <img src="images/splash.png" alt="splash" />
+	</div><!-- header -->
+	<div id="content">
+        <div class="home">
+            <p class="description">
+               <strong>GeekHub</strong> — це проект, що надає можливість отримати практичні знання та навички в сфері розробки програмного забезпечення. На відміну від традиційної освіти, викладачі GeekHub працюють з новітніми технологіями у провідних софтверних компаніях, тому слухачі GeekHub отримують тільки актуальні знання. Якщо ти зацікавлений — запрошуємо ознайомитись з 
+               <a href="/about.html">деталями проекту</a>.
+            </p>
+            <h2>Наші Курси</h2>
+            <ul class="types">
+                <li class="left-col">
+                	<img src="images/icon_front.png" />
+                	<h3>Frontend + CMS</h3>
+                    <p>Цей курс допоможе вам навчитися створювати веб сайти на основі системи керування контентом. Все, від скінування дизайну до підключення CMS. Цей курс дасть вам чудовий старт для фріланса або роботи в компанії.</p>
+                </li>
+                <li>
+                	<img src="images/icon_cms.png" />
+                	<h3>Advanced CMS</h3>
+                	<p>Необхідні та поглибленні знання в системах керування контентом. Якщо ви хочете робити вебсайти як професіонал, цей курс для вас. Особливості різних CMS, використання та написання плагінів та компонентів, інтеграція із соціальними мережами та третьосторонніми сервісами.</p>
+                </li>
+                <li class="left-col">
+                	<img src="images/icon_adv_php.png" />
+                    <h3>Advanced PHP</h3>
+                    <p>Для тих хто хоче розвити свої базові навички в PHP. Курс заглиблюється в вивчення ООП, MVC та фреймворку Symfony.</p>
+                </li>
+                <li>
+                <img src="images/icon_java.png" />
+                	<h3>Basic Java</h3>
+                	<p>Java -- це основа ентерпрайз технологій. Ви ознайомитесь із мовою, базовою структурю SDK основами технологій на Java. Курс вимагає підвищеного рівня самостійної роботи але отриманні знання приносять особливу винагороду в роботі.</p>
+                </li>
+                <li class="left-col">
+                <img src="images/icon_android.png" />
+                	<h3>Java for Android</h3>
+                	<p>Розробка під мобільні технології все більше набирає популярності. GeekHub починає із найпопулярнішої відкритої платформи Android.</p>
+                </li>
+                <li>
+                <img src="images/icon_pm.png" />
+                	<h3>Project Management </h3>
+                	<p>Щоб стати досвідченим менеджером проектів потрібні роки спроб та помилок. Geekhub дає вам можливість набути практичних навичок та уникнути неприємних ситуацій в реальній роботі. Ми навчимо вас розуміти бізнес, відносини із клієнтами і девелоперами і звичайно методології ведення проектів.</p>
+                </li>
+                <li class="left-col">
+                <img src="images/icon_qa.png" />
+                	<h3>Quality Assurance</h3>
+                	<p>Контроль якості проектів -- важлива частина процесу розробки. Цей курс навчить вас систематизувати та автоматизувати процес тестування, підвищити якість та швидкість виконання проектів в компанії.</p>
+                </li>
+                <li>
+                <img src="images/icon_english.png" />
+                	<h3>Technical English</h3>
+                	<p>Нинішні ринкові умови вимагають робочого знання англійської мови і вільним використанням технічних термінів. Немає кращого місця щоб підтягнути ці навички, ніж курс Techical English на GeekHub! Курс викладає Tim Phipps, англієць із науковим ступенем у англійскій літературі.</p>
+                </li>
+            </ul>
+            <ul class="social_share">
+                <li id="vk">
+                    <script type="text/javascript">
+                        VK.Widgets.Group("vk", {mode: 0, width: "276", height: "240"}, 30111409);
+                    </script>
+                </li>
+                <li class="sertificates_list">
+                	<h4><a href="/certified-professionals.html">Сертифiкованi професiонали</a></h4>
+                </li>
+                <li>
+                    <h4>Наші Спонсори</h4>
+                    <ul>
+                        <li class="de"><a href="http://povnahata.com">Дім Євангелія</a></li>
+                        <li class="moc"><a href="http://masterofcode.com">Masterofcode LTD</a></li>
+                        <li class="sergium"><a href="http://sergium.net">SerGium.net</a></li>
+                        <li class="clear left stuff"><a href="http://val.co.ua/">val.co.ua/</a></li>
+                        <li class="youthog"><a href="http://yothog.com">Youthog.com</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+	</div><!-- content -->
+    <ul id="footer">
+        <li>
+            <ul class="nav">
+                <li><a href="/">Головна</a></li>
+                <li><a href="/about.html">Про GeekHub</a></li>
+                <li><a href="/team.html">Команда</a></li>
+                <li><a href="/contacts.html">Зв'язок</a></li>
+            </ul>
+        </li>
+        <li>© Copyright 2011</li>
+    </ul>
+</div>
+
+</body>
+</html>

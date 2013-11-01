@@ -22,13 +22,6 @@ $doc			= JFactory::getDocument();
 $templateparams	= $app->getTemplate(true)->params;
 
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_stylechanger.js', 'text/javascript', true);
-
-//JHTML::stylesheet($filename, $path);
-//$document =& JFactory::getDocument();
-//$document->addStyleSheet("/css/style.css".'text/css',"screen");
-//$doc->addStyleSheet(JURI::root().'/templates/'.$this->template.'/css/style.css'); //////
-// $document->addCustomTag($stylelink); !!!
-
 ?>
 
 <?php if(!$templateparams->get('html5', 0)): ?>
@@ -51,34 +44,8 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 <div id="wrap">
 
 	<div id="header">
-        <!--<h1 id="logo">
-
-            <?php if ($logo != null ): ?>
-                <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($logo); ?>" alt="<?php echo htmlspecialchars($templateparams->get('sitetitle'));?>" />
-            <?php else: ?>
-                <?php echo htmlspecialchars($templateparams->get('sitetitle'));?>
-            <?php endif; ?>
-            <span class="header1">
-					<?php echo htmlspecialchars($templateparams->get('sitedescription'));?>
-					</span></h1>
-
-        <!--<h1 id="logo">
-            <?php echo $app->getCfg('sitename'); ?>
-        </h1>-->
-
+        <?php $app->getCfg('sitename'); ?>
         <h1><a href="/">GeekHub</a></h1>
-
-        <!--Social
-        <?php if ($this->countModules('position-1')): ?>
-            <jdoc:include type="modules" name="position-1" style="none" />
-        <?php endif; ?>-->
-        <ul class="links">
-            <li class="fb"><a href="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
-            <li class="vk"><a href="http://vkontakte.ru/geekhub">Вконтакте</a></li>
-            <li class="tw"><a href="http://twitter.com/#!/geek_hub">twitter</a></li>
-            <li class="yb"><a href="http://www.youtube.com/user/GeekHubchannel">youtube</a></li>
-        </ul>
-        <!--End Social -->
 
         <div class="nav">
         <?php if($this->countModules('atomic-topmenu') or $this->countModules('position-3') ) : ?>
@@ -86,36 +53,19 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
             <jdoc:include type="modules" name="position-3" style="container" />
         <?php endif; ?>
         </div>
+        <ul class="links">
+            <li class="fb"><a href="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
+            <li class="vk"><a href="http://vkontakte.ru/geekhub">Вконтакте</a></li>
+            <li class="tw"><a href="http://twitter.com/#!/geek_hub">twitter</a></li>
+            <li class="yb"><a href="http://www.youtube.com/user/GeekHubchannel">youtube</a></li>
+        </ul>
         <span class="line"></span>
-
-        <!--<img src="images/splash.png" alt="splash" />-->
 	</div><!-- header -->
 
-	<div id="content">
+	<div >
         <jdoc:include type="message" />
         <jdoc:include type="component" />
 	</div><!-- content -->
-
-
-    <!--<div id="footer-sub">
-        <p>footer-sub</p>
-
-        <?php if (!$templateparams->get('html5', 0)): ?>
-        <div id="footer">
-            <?php else: ?>
-            <footer id="footer">
-                <?php endif; ?>
-
-                <jdoc:include type="modules" name="position-14" />
-                <p>
-                    <?php echo JText::_('G');?> <a href="http://www.joomla.org/">Joomla!&#174;</a>
-                </p>
-
-                <?php if (!$templateparams->get('html5', 0)): ?>
-        </div>
-    <?php else: ?>
-        </footer>
-    <?php endif; ?><!-- end footer -->
 
     <div id="footer">
 
@@ -125,8 +75,6 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
                         <jdoc:include type="modules" name="position-11" style="container" />
                     </li></ul></li>
             <?php endif; ?>
-
-
         <!--<jdoc:include type="modules" name="footermenu" />-->
         <div class="copyright">
             &copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
