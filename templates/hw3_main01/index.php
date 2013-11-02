@@ -22,15 +22,7 @@ $doc			= JFactory::getDocument();
 $templateparams	= $app->getTemplate(true)->params;
 
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_stylechanger.js', 'text/javascript', true);
-
-//JHTML::stylesheet($filename, $path);
-//$document =& JFactory::getDocument();
-//$document->addStyleSheet("/css/style.css".'text/css',"screen");
-//$doc->addStyleSheet(JURI::root().'/templates/'.$this->template.'/css/style.css'); //////
-// $document->addCustomTag($stylelink); !!!
-
 ?>
-
 <?php if(!$templateparams->get('html5', 0)): ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php else: ?>
@@ -42,29 +34,16 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 <head>
     <jdoc:include type="head" />
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/style.css" type="text/css" media="screen,projection" />
-
 </head>
 
 
 <body>
-
 <div id="wrap">
 
+<!-- ------- header ----------->
+
 	<div id="header">
-        <!--<h1 id="logo">
-
-            <?php if ($logo != null ): ?>
-                <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($logo); ?>" alt="<?php echo htmlspecialchars($templateparams->get('sitetitle'));?>" />
-            <?php else: ?>
-                <?php echo htmlspecialchars($templateparams->get('sitetitle'));?>
-            <?php endif; ?>
-            <span class="header1">
-					<?php echo htmlspecialchars($templateparams->get('sitedescription'));?>
-					</span></h1>
-
-        <!--<h1 id="logo">
-            <?php echo $app->getCfg('sitename'); ?>
-        </h1>-->
+        <?php $app->getCfg('sitename'); ?>
         <h6><a href="/">GeekHub</a></h6>
 
         <div class="nav">
@@ -74,6 +53,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
             <jdoc:include type="modules" name="position-1" style="container" />
         <?php endif; ?>
         </div>
+
         <ul class="links">
             <li class="fb"><a href="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
             <li class="vk"><a href="http://vkontakte.ru/geekhub">Вконтакте</a></li>
@@ -86,59 +66,35 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
             <?php echo htmlspecialchars($templateparams->get('sitedescription'));?>
 		</p>
         <img id="splash" alt="splash" src="images/splash.png">
-	</div><!-- header -->
+	</div>
+
+<!-- -------- content -------- -->
 
 	<div id="content">
         <jdoc:include type="message" />
         <jdoc:include type="component" />
-	</div>
-
-    <div class="home">
-    <ul class="social_share">
-        <li id="vk">
-            <script type="text/javascript">
-                VK.Widgets.Group("vk", {mode: 0, width: "276", height: "240"}, 30111409);
-            </script>
-        </li>
-        <li class="sertificates_list">
-            <h4><a href="/certified-professionals.html">Сертифiкованi професiонали</a></h4>
-        </li>
-        <li>
-            <h4>Наші Спонсори</h4>
-            <ul>
-                <li class="de"><a href="http://povnahata.com">Дім Євангелія</a></li>
-                <li class="moc"><a href="http://masterofcode.com">Masterofcode LTD</a></li>
-                <li class="sergium"><a href="http://sergium.net">SerGium.net</a></li>
-                <li class="clear left stuff"><a href="http://val.co.ua/">val.co.ua/</a></li>
-                <li class="youthog"><a href="http://yothog.com">Youthog.com</a></li>
+        <div class="home">
+            <ul class="social_share">
+                <li id="vk">
+                    <iframe style="overflow: hidden; height: 240px;" id="vkwidget1" src="http://vk.com/widget_community.php?app=0&amp;width=276px&amp;_ver=1&amp;gid=30111409&amp;mode=0&amp;color1=&amp;color2=&amp;color3=&amp;height=240&amp;url=http%3A%2F%2Fgeekhub.ck.ua%2F&amp;1421907cc94" name="fXD4c416" frameborder="0" height="200" scrolling="no" width="276"></iframe>
+                </li>
+                <li class="sertificates_list">
+                    <h4><a href="/certified-professionals.html">Сертифiкованi професiонали</a></h4>
+                </li>
+                <li><h4>Наші Спонсори</h4>
+                    <ul>
+                        <li class="de"><a href="http://povnahata.com">Дім Євангелія</a></li>
+                        <li class="moc"><a href="http://masterofcode.com">Masterofcode LTD</a></li>
+                        <li class="sergium"><a href="http://sergium.net">SerGium.net</a></li>
+                        <li class="clear left stuff"><a href="http://val.co.ua/">val.co.ua/</a></li>
+                        <li class="youthog"><a href="http://yothog.com">Youthog.com</a></li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-    </ul>
         </div>
+    </div>
 
-
-    <!-- content -->
-
-
-    <!--<div id="footer-sub">
-        <p>footer-sub</p>
-
-        <?php if (!$templateparams->get('html5', 0)): ?>
-        <div id="footer">
-            <?php else: ?>
-            <footer id="footer">
-                <?php endif; ?>
-
-                <jdoc:include type="modules" name="position-14" />
-                <p>
-                    <?php echo JText::_('G');?> <a href="http://www.joomla.org/">Joomla!&#174;</a>
-                </p>
-
-                <?php if (!$templateparams->get('html5', 0)): ?>
-        </div>
-    <?php else: ?>
-        </footer>
-    <?php endif; ?><!-- end footer -->
+<!-- -------- footer -------- -->
 
     <div id="footer">
         <li>
@@ -150,13 +106,11 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
             <?php endif; ?>
         </li>
 
-        <!--<jdoc:include type="modules" name="footermenu" />-->
         <div class="copyright">
             &copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
         </div>
 
     </div>
-
 
 </div>
 </body>

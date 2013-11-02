@@ -42,7 +42,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
 <body class="inner">
 
 <div id="wrap">
-
+<!-- ------- header ----------->
 	<div id="header">
         <?php $app->getCfg('sitename'); ?>
         <h1><a href="/">GeekHub</a></h1>
@@ -60,26 +60,28 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_sty
             <li class="yb"><a href="http://www.youtube.com/user/GeekHubchannel">youtube</a></li>
         </ul>
         <span class="line"></span>
-	</div><!-- header -->
+	</div>
+
+<!-- -------- content -------- -->
 
 	<div >
         <jdoc:include type="message" />
         <jdoc:include type="component" />
-	</div><!-- content -->
+	</div>
+
+<!-- -------- footer -------- -->
 
     <div id="footer">
-
             <?php if($this->countModules('footermenu') or $this->countModules('position-11')) : ?>
                 <li><ul> <li>
                         <jdoc:include type="modules" name="footermenu" style="container" />
                         <jdoc:include type="modules" name="position-11" style="container" />
                     </li></ul></li>
             <?php endif; ?>
-        <!--<jdoc:include type="modules" name="footermenu" />-->
+
         <div class="copyright">
             &copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
         </div>
-
     </div>
 
 </div>

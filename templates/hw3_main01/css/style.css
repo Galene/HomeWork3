@@ -449,13 +449,16 @@ img #splash {
 }
 #content .home .description, #content .blog {
 /*    padding:5px 64px 27px;*/
-    line-height:24px;
-    font-size:14px;
+    line-height:18px;
+    color: #39525A;
+    font-size:13px;
     position:relative;
     z-index:2;
+    overflow: hidden;
 }
-#content .home .description a , #content.blog {
+#content .home .description a , #content.blog{
     color:#E11D5D;
+    width: 295px;
 }
 #content .home .description a:hover ,#content .blog a:hover {
     text-decoration:underline;
@@ -484,6 +487,9 @@ img #splash {
     font-size:27px;
     line-height:27px;
     color: #EA2778;
+    overflow: hidden;
+    padding: 5px 0 0 0;
+
 }
 #content .home ul.types li p {
     overflow:hidden;
@@ -1064,32 +1070,39 @@ img #splash {
     padding:5px 2px 5px 2px;
     font-size:1.4em
 }
-.blog {
 
+.blog p {
+    margin: 13px 10px 0 0;
+    overflow: hidden
 }
+
 .items-row {
-    margin-bottom: 10px !important;
+/*    margin-bottom: 10px !important;*/
     overflow: hidden;
     border-bottom: 1px solid #DAE1E8;
+
 }
 
 .cols-3 .column-1 {
     float: left;
     margin-right: 4%;
-    padding: 0 5px;
+/*    padding: 0 5px;*/
     width: 29%;
+    padding: 24px 10px 24px 0;
 }
 
 .cols-3 .column-2 {
     float: left;
     margin-left: 0;
-    padding: 0 5px;
+/*    padding: 0 5px;*/
     width: 29%;
+    padding: 24px 5px 24px 0;
 }
 
 .cols-3 .column-3 {
     float: right;
-    padding: 0 5px;
+/*    padding: 0 5px;*/
+    padding: 24px 5px 24px 0;
     width: 29%;
 }
 .column-1, .column-2 {
@@ -1857,7 +1870,7 @@ h1 {
     color: #45668E;
     font-size: 1.18em;
     padding: 0px 0px 3px;
-    margin: 0px 0px 10px;
+/*    margin: 0px 0px 10px;*/
 }
 h4 {
     border-bottom: 1px solid #E8EBEE;
