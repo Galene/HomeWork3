@@ -93,6 +93,10 @@
 			label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC"
 			class="inputbox" rows="3" cols="30" />
 
+        <field name="metadesctest" type="textarea"
+               label="JFIELD_META_DESCRIPTION_LABEL1" description="JFIELD_META_DESCRIPTION_DESC1"
+               class="inputbox" rows="3" cols="30" />
+
 		<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL"
 			description="JFIELD_ACCESS_DESC" class="inputbox" size="1" />
 
@@ -535,10 +539,10 @@
 			</fieldset>
 
 	</fields>
-	
+
 	<field name="xreference" type="text"
 		label="JFIELD_KEY_REFERENCE_LABEL"
-		description="JFIELD_KEY_REFERENCE_DESC" 
+		description="JFIELD_KEY_REFERENCE_DESC"
 		class="inputbox" size="20" />
 
 	<fields name="images">

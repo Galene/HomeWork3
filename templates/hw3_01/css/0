@@ -1,0 +1,37 @@
+<div id="content">
+    <div class="contacts">
+        <h2>Зв’язок</h2>
+        <h3 style="text-align: left; padding-left: 170px;">Заходьте</h3>
+        <dl>
+            <dt class="map"></dt>
+            <dd class="map"><iframe src="https://maps.google.com/maps?q=49.426014,32.094689&amp;num=1&amp;ie=UTF8&amp;ll=49.425937,32.09512&amp;spn=0.00455,0.011362&amp;t=m&amp;z=14&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="382" height="287"></iframe></dd>
+            <dt></dt>
+        </dl>
+        <h3>Звоніть</h3>
+        <dl>
+            <dt></dt>
+            <dd><img src="http://geekhub.ck.ua/images/phone.png" border="0" alt="phone" /></dd>
+            <dt></dt>
+        </dl>
+        <h3>Пишіть</h3>
+        <dl>
+            <dt></dt>
+            <dd><img src="http://geekhub.ck.ua/images/email.png" border="0" alt="email" /></dd>
+            <dt></dt>
+        </dl>
+        <h3>Слідкуйте</h3>
+        <dl>
+            <dt></dt>
+            <dd>
+                <ul>
+
+                    <li class="fb"><a href="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
+                    <li class="vk"><a href="http://vkontakte.ru/geekhub">vkontakte</a></li>
+                    <li class="tw"><a href="http://twitter.com/#%21/geek_hub">twitter</a></li>
+                </ul>
+            </dd>
+
+            <dd>Перед тим як телефонувати, ознайомтесь із <a href="http://geekhub.ck.ua/faq.html">сторінкою FAQ</a></dd>
+        </dl>
+    </div>
+</div>

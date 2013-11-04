@@ -659,6 +659,16 @@ body span.line
     margin: 0 0 24px;
     border-bottom:1px solid #a7c3cf;
 }
+
+#content .contacts h3 {
+    color: #EB3580;
+    font-size: 27px;
+    font-weight: normal;
+    padding: 0 0 12px;
+    text-align: center;
+}
+
+
 #content .contacts > img {
     float:left;
     margin: 0 0 0 40px;
@@ -668,6 +678,7 @@ body span.line
     overflow:hidden;
     text-align:center;
     padding:0 35px;
+    float:left;
 }
 
 #content .contacts dl dt.map {
@@ -688,16 +699,27 @@ body span.line
     padding:0 0 30px;
 }
 
-#content .contacts dl h3 {
+#content .contacts h3,  {
     text-align:center;
     padding:0px 0 12px;
     font-size:27px;
     font-weight:normal;
     color:#eb3580;
+    width:381px;
 }
+
+.contactfaq {
+    color: #4C7689;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 0 30px;
+}
+
 #content .contacts dl ul {
     overflow:hidden;
     padding:0 0 0 116px;
+    text-align:left;
 }
 #content .contacts dl ul li {
     float:left;

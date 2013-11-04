@@ -1,0 +1,24 @@
+<div id="content">
+    <div class="contacts">
+        <h2>Зв’язок</h2>
+        <dl>
+            <dt class="map"><h3>Заходьте</h3></dt>
+            <dd class="map"><div id=map><small>
+                        <iframe width="382" height="287" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=49.425993,32.094625&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=49.424709,32.093725&amp;spn=0.016023,0.032701&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=49.425993,32.094625&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=49.424709,32.093725&amp;spn=0.016023,0.032701&amp;z=14&amp;iwloc=near&amp;source=embed" style="color:#0000FF;text-align:left">Просмотреть увеличенную карту</a></small>
+                    </small>
+                </div></dd>
+            <dt><h3>Звоніть</h3></dt>
+            <dd><img src="http://geekhub.ck.ua/images/phone.png" border="0" alt="phone" /></dd>
+            <dt><h3>Пишіть</h3></dt>
+            <dd><img src="http://geekhub.ck.ua/images/email.png" border="0" alt="email" /></dd>
+            <dt><h3>Слідкуйте</h3></dt>
+            <dd><ul>
+                        <li class="fb"><a href="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
+                        <li class="vk"><a href="http://vkontakte.ru/geekhub">vkontakte</a></li>
+                        <li class="tw"><a href="http://twitter.com/#%21/geek_hub">twitter</a></li>
+                </ul>
+            </dd>
+            <dd>Перед тим як телефонувати, ознайомтесь із <a href="http://geekhub.ck.ua/faq.html">сторінкою FAQ</a></dd>
+        </dl>
+    </div>
+</div>
