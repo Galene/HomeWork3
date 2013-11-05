@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/hw3.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/modules/mod_social/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/modules/mod_social/mod_socail.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/modules/mod_social/mod_social.php" afterPath="" />
@@ -126,24 +120,24 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/templates/geekhub/template_preview.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/templates/geekhub/template_thumbnail.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/templates/geekhub/template_thumbnail1.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_content/models/forms/article.xml" afterPath="$PROJECT_DIR$/administrator/components/com_content/models/forms/article.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration.php" afterPath="$PROJECT_DIR$/configuration.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jcontroller.log.php" afterPath="$PROJECT_DIR$/logs/jcontroller.log.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hw3_01/css/style.css" afterPath="$PROJECT_DIR$/templates/hw3_01/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hw3_main01/css/style.css" afterPath="$PROJECT_DIR$/templates/hw3_main01/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hw3_main01/.idea/workspace.xml" afterPath="$PROJECT_DIR$/templates/hw3_main01/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hw3_01/templateDetails.xml" afterPath="$PROJECT_DIR$/templates/hw3_01/templateDetails.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hw3_main01/templateDetails.xml" afterPath="$PROJECT_DIR$/templates/hw3_main01/templateDetails.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hw3.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383598968321" ignored="false" />
+    <file path="/Dummy.txt" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383654582834" ignored="false" />
     <file path="/index.php" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383582510670" ignored="false" />
     <file path="/a.dummy" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383587145859" ignored="false" />
     <file path="/default.php" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383583426532" ignored="false" />
     <file path="/config.xml" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383587053397" ignored="false" />
     <file path="/en-GB.ini" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383587123530" ignored="false" />
     <file path="/article.xml" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383587172858" ignored="false" />
-    <file path="/style.css" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383604197491" ignored="false" />
+    <file path="/style.css" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383669608655" ignored="false" />
     <file path="/0" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383599984870" ignored="false" />
+    <file path="/templateDetails.xml" changelist="e4dcc5f5-738d-4e90-a6dc-dc196c8ba576" time="1383658514364" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +160,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/hw3_01/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="715" column="22" selection-start="17969" selection-end="17969" vertical-scroll-proportion="0.5413534">
+            <state line="201" column="22" selection-start="6355" selection-end="6355" vertical-scroll-proportion="0.58045113">
               <folding />
             </state>
           </provider>
@@ -176,9 +170,7 @@
         <entry file="file://$PROJECT_DIR$/templates/hw3_01/css/0">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="1512" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -210,6 +202,8 @@
         <option value="$PROJECT_DIR$/administrator/language/en-GB/en-GB.ini" />
         <option value="$PROJECT_DIR$/administrator/components/com_content/models/forms/article.xml" />
         <option value="$PROJECT_DIR$/templates/hw3_01/css/0" />
+        <option value="$PROJECT_DIR$/templates/hw3_01/templateDetails.xml" />
+        <option value="$PROJECT_DIR$/templates/hw3_main01/templateDetails.xml" />
         <option value="$PROJECT_DIR$/templates/hw3_01/css/style.css" />
       </list>
     </option>
@@ -761,7 +755,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681493" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -837,53 +831,24 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_content/models/forms/article.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="29" selection-start="3592" selection-end="3604" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_content/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="823" column="16" selection-start="20340" selection-end="20340" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_menu/tmpl/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/hw3_01/html/mod_menu/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/hw3_main01/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="22" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="45" column="22" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/mod_menu/tmpl/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/hw3_01/html/mod_menu/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_content/content.xml">
@@ -924,9 +889,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hw3_01/component.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="34" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.2117117">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hw3_main01/templateDetails.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="38" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.42674252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hw3_01/templateDetails.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="38" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.49075392">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/hw3_01/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="45" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.022522522">
+        <state line="79" column="27" selection-start="3103" selection-end="3103" vertical-scroll-proportion="0.7522523">
           <folding />
         </state>
       </provider>
@@ -934,15 +920,13 @@
     <entry file="file://$PROJECT_DIR$/templates/hw3_01/css/0">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="1512" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/hw3_01/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="715" column="22" selection-start="17969" selection-end="17969" vertical-scroll-proportion="0.5413534">
+        <state line="201" column="22" selection-start="6355" selection-end="6355" vertical-scroll-proportion="0.58045113">
           <folding />
         </state>
       </provider>

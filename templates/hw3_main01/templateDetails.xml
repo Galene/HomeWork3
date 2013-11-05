@@ -29,6 +29,8 @@
 
 	<positions>
 		<position>debug</position>
+        <position>footermenu</position>
+        <position>left-menu</position>
 		<position>position-0</position>
 		<position>position-1</position>
 		<position>position-2</position>

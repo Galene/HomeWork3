@@ -161,8 +161,67 @@ body span.line
     text-decoration: underline;
 }
 /*----------------------------------------------------------------------------------*/
+/*-------------------------------------Blog------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.left-menu-suffix {
+    float:left;
+    overflow: hidden;
+    padding: 0 40px 0 0;
+    width: 200px;
+    padding: 0 40px 0 0;
+}
+.left-menu-suffix p {
+    color: #4C7687;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 0 13px;
+    overflow: hidden;
+}
+
+.img-fulltext-right img {
+    float:right;
+}
+
+.left-menu-suffix ul li {
+    border-bottom: 1px dotted #D2DCE1;
+}
+
+.left-menu-suffix ul li a {
+    display: block;
+    padding: 7px 0 7px 8px;
+}
+
+.left-menu-suffix h3 {
+    border-bottom: 1px solid #D2DCE1;
+    color: #4C7687;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    line-height: 18px;
+    padding: 0 0 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.left-menu-suffix .menu{
+    color: #4C7689;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+}
+
+.blogwrap{
+    float: right;
+    width: 560px;
+}
+
+/*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+
 .inner #header .nav {
     height:108px;
     margin:0;
